@@ -1,0 +1,12 @@
+{
+  "service":
+    {
+      "name": "gcp_webserver",
+      "tags": ["gcp"],
+      "port": 5000,
+      "check": {
+        "args": ["curl", "http://<GCP Flask webserver IPv4>:5000"],
+        "interval": "10s"
+      }
+    }
+}

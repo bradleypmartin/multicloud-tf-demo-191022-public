@@ -1,0 +1,12 @@
+{
+  "service":
+    {
+      "name": "aws_webserver",
+      "tags": ["aws"],
+      "port": 80,
+      "check": {
+        "args": ["curl", "http://<aws webserver IPv4>/"],
+        "interval": "10s"
+      }
+    }
+}

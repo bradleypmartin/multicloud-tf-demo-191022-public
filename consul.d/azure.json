@@ -1,0 +1,12 @@
+{
+  "service":
+    {
+      "name": "azure_webserver",
+      "tags": ["azure"],
+      "port": 80,
+      "check": {
+        "args": ["curl", "<Azure App Service DNS Output>"],
+        "interval": "10s"
+      }
+    }
+}
