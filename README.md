@@ -8,7 +8,7 @@ The Terraform modules `aws_deployment`, `azure_deployment`, and `gcp_deployment`
 
 If you would like to try out one or more of the deployments herein, please see the sections below regarding requirements for each provider.
 
-Each deployment assumes you have _some_ way to `plan` and `apply` Terraform code...whether that's locally or through a remote service like Terraform Cloud/Enterprise. HashiCorp offers [some helpful documentation](https://learn.hashicorp.com/terraform) to get you started.
+Each deployment assumes you have _some_ way to `plan` and `apply` Terraform code...whether that's locally or through a remote service like Terraform Cloud/Enterprise. I used a currently-free tier of Terraform Cloud for provisioning througout this demo, but there are certainly other ways you can do it. HashiCorp offers [some helpful documentation](https://learn.hashicorp.com/terraform) to get you started.
 
 Finally, the `consul.d` folder here contains example service configurations for a 'first crack' at running a local Consul agent to keep track of the multicloud deployment shared here. I followed the [HashiCorp Learn docs](https://learn.hashicorp.com/consul) to get going with Consul.
 
